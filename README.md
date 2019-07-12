@@ -14,7 +14,7 @@ repositório que irá permitir o download do mci-kit:
 ```groovy
 maven { url 'https://jitpack.io' } //Permite o funcionamento de algumas dependências do mci-kit
 
-maven { url '<nossa-url-repo-priava>' }
+maven { url '<nossa-url-repo-privada>' }
 ```
 
 Em seguida adicione adicione a dependência mci-kit no gradle do seu aplicativo:
