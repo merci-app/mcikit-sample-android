@@ -2,7 +2,7 @@
 
 ## Pré-Requisitos
 ````groovy
-    - Android Version: 4.3 ou superior
+    - Android version: 4.3 ou superior
     - Kotlin: 1.3.31 ou superior
     - Androidx
 ````
@@ -12,7 +12,7 @@
 Para configurar Merci-Kit em seu projeto primeiro adicione no root do seu `build.gradle` o 
 repositório que irá permitir o download do mci-kit:
 ```groovy
-maven { url 'https://jitpack.io' } //Permite o funcionamento de algumas dependências do mci-kit
+maven { url 'https://jitpack.io' } // dependências do mci-kit
 
 maven { url '<nossa-url-repo-privada>' }
 ```
@@ -50,7 +50,7 @@ sua app seja notificada sempre que o `mci-kit` necessite solicitar algo, por exe
      }
  
      /**
-     * Sempre que o usuário clicar nas ações de Solicitar Suporte dentro do mci-kit iremos  * notificar seu app a partir dessa função
+     * Sempre que o usuário clicar nas ações de Solicitar Suporte dentro do mci-kit iremos notificar seu app a partir dessa função
      **/
      override fun supportRequested(context: Context) {
      }
