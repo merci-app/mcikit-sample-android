@@ -9,7 +9,7 @@
 
 ## Dependências:
 
-Para configurar Merci-Kit em seu projeto primeiro adicione no root do seu `_build.gradle_` o 
+Para configurar Merci-Kit em seu projeto primeiro adicione no root do seu `build.gradle` o 
 repositório que irá permitir o download do mci-kit:
 ```groovy
 maven { url 'https://jitpack.io' } //Permite o funcionamento de algumas dependências do mci-kit
@@ -25,7 +25,7 @@ dependencies {
 ```
 
 ## Inicialização
-A framework deverá ser iniciada no método `_onCreate_` do seu `_Application_` :
+A framework deverá ser iniciada no método `onCreate` do seu `Application` :
 
 ```kotlin
 Merci.instantiate(
@@ -37,8 +37,8 @@ Merci.instantiate(
                 )
 ```
 
-O parâmetro clientProvider pode ser uma classe sua que herda de `_ClienteProvider_`, útil para que
-sua app seja notificada sempre que o `_mci-kit_` necessite solicitar algo, por exemplo:
+O parâmetro clientProvider pode ser uma classe sua que herda de `ClienteProvider`, útil para que
+sua app seja notificada sempre que o `mci-kit` necessite solicitar algo, por exemplo:
 ````kotlin
  class SuaClasseClientProvider : ClientProvider() {
     
