@@ -2,6 +2,7 @@
 
 ## Pré-Requisitos
 ````groovy
+    - Java 8
     - Android version: 4.3 ou superior
     - Kotlin: 1.3.31 ou superior
     - Androidx
