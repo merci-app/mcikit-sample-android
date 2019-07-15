@@ -15,14 +15,14 @@ repositório que irá permitir o download do mci-kit:
 ```groovy
 maven { url 'https://jitpack.io' } //Permite o funcionamento de algumas dependencias do mci-kit
 
-maven { url 'https://dl.bintray.com/merci-app/merci-kit' }
+maven { url '<nossa-url-repo-privada>' }
 ```
 
 Em seguida adicione adicione a dependência mci-kit no gradle do seu aplicativo:
 
 ```groovy
 dependencies {
-    implementation 'kit.merci:mci-kit:1.0.0'
+    implementation 'kit.merci:mci-kit:1.0.0-alpha17'
 }
 ```
 
