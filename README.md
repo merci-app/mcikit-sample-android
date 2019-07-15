@@ -1,4 +1,4 @@
-# Configuração Merci kit
+# Configuração Merci-Kit Android
 
 ## Pre-Requisito
 ````groovy
