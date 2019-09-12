@@ -20,7 +20,7 @@ maven { url '<nossa-url-repo-privada>' }
 Em seguida adicione adicione a dependência mci-kit no gradle do seu aplicativo:
 ```groovy
 dependencies {
-    implementation 'kit.merci:mci-kit:1.0.0-alpha16'
+    implementation 'kit.merci:mci-kit:1.0.7'
 }
 ```
 
