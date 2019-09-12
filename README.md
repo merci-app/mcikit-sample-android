@@ -91,6 +91,21 @@ try {
 }
 ````
 
+## Proguard & R8
+Caso seu projeto utilize uma dessas ferramentas de obfuscação será necessário adicionar as seguintes
+regras no seu proguard-rules.pro:
+
+```proguard
+# mci-kit rules
+-keep class kit.merci.data.model.** { *; }
+-keep class kit.merci.data.network.requests.** { *; }
+-keep class kit.merci.data.network.response.** { *; }
+-keep class app.merci.merchant.taxis99.data.model.** { *; }
+-keep class app.merci.merchant.taxis99.data.network.request.** { *; }
+-keep class app.merci.merchant.taxis99.data.network.response.** { *; }
+-keep class foundation.merci.external.** { *; }
+```
+
 ---
 
 [Merci @ 2019](https://merci.com.br)
