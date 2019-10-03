@@ -84,18 +84,18 @@ Merci.isAuthenticated()
 
 Para iniciar Market Pay é necessário chamar o método de launch da seguinte forma:
 ````kotlin
-try {
-    Merci.launch(this, MarketPay)
-} catch (e: MerchantNotFound) {
-    // Será enviado uma Exception caso o Merchant não seja encontrato em nossa plataforma
-}
+Merci.launch(this, MarketPay)
 ````
 
 ## Iniciar uma venda
 
 Para iniciar uma venda direta, é necessário chamar o método abaixo, informando o identifcador do estabelecimento como mostra a seguir:
 ````kotlin
+try {
     Merci.launch(this, Merchant("<merchant-id>"))
+} catch (e: MerchantNotFound) {
+    // Será enviado uma Exception caso o Merchant não seja encontrato em nossa plataforma
+}
 ````
 
 ## Alterar identidade visual default
