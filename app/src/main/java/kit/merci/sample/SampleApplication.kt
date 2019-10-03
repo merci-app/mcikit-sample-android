@@ -14,7 +14,7 @@ class SampleApplication : MultiDexApplication() {
             clientId = "MIY32P8YNZ1_IAPQCJVXWOZS",
             clientSecret = "\$2a\$10\$wZ*pGUL38*LkfKFbKGDpZOI6mh*L44FUyLjLeDfjg7ZApY0R71BQ6",
             environment = Environment.SANDBOX,
-            clientProvider = SampleClientProvider()
+            clientProvider = SampleClientProvider(this)
         )
     }
 

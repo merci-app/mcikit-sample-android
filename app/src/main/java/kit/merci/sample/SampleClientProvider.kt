@@ -3,12 +3,22 @@ package kit.merci.sample
 import android.app.Activity
 import android.content.Context
 import android.widget.Toast
+import kit.merci.MCICallback
+import kit.merci.Merci
 import kit.merci.provider.ClientProvider
 
-class SampleClientProvider : ClientProvider() {
+class SampleClientProvider(private val context: Context) : ClientProvider() {
 
     override fun authenticate() {
+        Merci.authenticate("39840279823", object : MCICallback {
+            override fun onSuccess() {
+                Toast.makeText(context, "Auth Success", Toast.LENGTH_SHORT).show()
+            }
 
+            override fun onError(e: Throwable) {
+                Toast.makeText(context, "Auth Error", Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 
     override fun supportRequested(context: Context) {

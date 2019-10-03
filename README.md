@@ -80,6 +80,17 @@ Para checar se o usuário esta autenticado na nossa plataforma:
 Merci.isAuthenticated()
 ````
 
+## Iniciar Markey Pay
+
+Para iniciar Market Pay é necessário chamar o método de launch da seguinte forma:
+````kotlin
+try {
+    Merci.launch(this, MarketPay)
+} catch (e: MerchantNotFound) {
+    // Será enviado uma Exception caso o Merchant não seja encontrato em nossa plataforma
+}
+````
+
 ## Iniciar uma venda
 
 Para iniciar uma venda direta, é necessário chamar o método abaixo, informando o identifcador do estabelecimento como mostra a seguir:
@@ -89,6 +100,16 @@ try {
 } catch (e: MerchantNotFound) {
     // Será enviado uma Exception caso o Merchant não seja encontrato em nossa plataforma
 }
+````
+
+## Alterar identidade visual default
+
+O mci-kit permite que o cliente altere a identidade visual dos principais pontos do framework. Para fazer isso
+é necessário definir os seguintes parametros:
+````xml
+<item name="merciPrimaryColor" type="color"><!-- Cor de fundo da home --></item>
+<item name="merciSecondaryColor" type="color"><!-- Cor de fundo os ícones da home --></item>
+<item name="merciHomeImage" type="drawable"><!-- Imagem de logo que será exibida na ToolBar --></item>
 ````
 
 ## Proguard & R8

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kit.merci.MCICallback
+import kit.merci.MarketPay
 import kit.merci.Merchant
 import kit.merci.Merci
 import kit.merci.exceptions.MerchantNotFound
@@ -14,6 +15,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnStartMarketPay.setOnClickListener {
+            Merci.launch(this, MarketPay)
+        }
 
         btnMerciAuth.setOnClickListener {
             Merci.authenticate("39840279823", object : MCICallback {
