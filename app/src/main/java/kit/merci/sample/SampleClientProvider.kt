@@ -10,7 +10,7 @@ import kit.merci.provider.ClientProvider
 class SampleClientProvider(private val context: Context) : ClientProvider() {
 
     override fun authenticate() {
-        Merci.authenticate("39840279823", object : MCICallback {
+        Merci.authenticate("<put-here-user-cpf>", object : MCICallback {
             override fun onSuccess() {
                 Toast.makeText(context, "Auth Success", Toast.LENGTH_SHORT).show()
             }

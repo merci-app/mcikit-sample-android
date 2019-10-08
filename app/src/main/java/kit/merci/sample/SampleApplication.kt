@@ -11,8 +11,8 @@ class SampleApplication : MultiDexApplication() {
 
         Merci.instantiate(
             application = this,
-            clientId = "MIY32P8YNZ1_IAPQCJVXWOZS",
-            clientSecret = "\$2a\$10\$wZ*pGUL38*LkfKFbKGDpZOI6mh*L44FUyLjLeDfjg7ZApY0R71BQ6",
+            clientId = "<put-here-cliendId>",
+            clientSecret = "<put-here-clientSecret>",
             environment = Environment.SANDBOX,
             clientProvider = SampleClientProvider(this)
         )

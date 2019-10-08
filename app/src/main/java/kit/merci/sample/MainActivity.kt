@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnMerciAuth.setOnClickListener {
-            Merci.authenticate("39840279823", object : MCICallback {
+            Merci.authenticate("<put-here-user-cpf>", object : MCICallback {
                 override fun onSuccess() {
                     Toast.makeText(this@MainActivity, "Auth Success", Toast.LENGTH_SHORT).show()
                 }

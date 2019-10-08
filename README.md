@@ -20,7 +20,7 @@ maven { url '<nossa-url-repo-privada>' }
 Em seguida adicione adicione a dependência mci-kit no gradle do seu aplicativo:
 ```groovy
 dependencies {
-    implementation 'kit.merci:mci-kit:1.0.7'
+    implementation 'kit.merci:mci-kit:1.1.0'
 }
 ```
 
@@ -106,6 +106,7 @@ O mci-kit permite que o cliente altere a identidade visual dos principais pontos
 <item name="merciPrimaryColor" type="color"><!-- Cor de fundo da home --></item>
 <item name="merciSecondaryColor" type="color"><!-- Cor de fundo os ícones da home --></item>
 <item name="merciHomeImage" type="drawable"><!-- Imagem de logo que será exibida na ToolBar --></item>
+<item name="merciBrandImage" type="drawable"><!-- Imagem que será exibida na transação --></item>
 ````
 
 ## Proguard & R8
