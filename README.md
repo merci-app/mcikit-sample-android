@@ -103,11 +103,14 @@ try {
 O mci-kit permite que o cliente altere a identidade visual dos principais pontos do framework. Para fazer isso
 é necessário definir os seguintes parametros:
 ````xml
-<item name="merciPrimaryColor" type="color"><!-- Cor de fundo da home --></item>
-<item name="merciSecondaryColor" type="color"><!-- Cor de fundo os ícones da home --></item>
-<item name="merciHomeImage" type="drawable"><!-- Imagem de logo que será exibida na ToolBar --></item>
-<item name="merciBrandImage" type="drawable"><!-- Imagem que será exibida na transação --></item>
-<item name="merciClientName" type="string"><!-- Identificação do cliente que irá ser exibido nas UIs onde necessitar exibir o nome do cliente --></item>
+<item name="homeBackgroundColor" type="color"><!-- Cor de fundo da home --></item>
+<item name="homeTitleColor" type="color"><!-- Cor de texto dos botões de categoria da home --></item>
+<item name="actionTintColor" type="color"><!-- Cor dos botões de ação --></item>
+<item name="actionBarTintColor" type="color"><!-- Cor dos botões da ActionBar --></item>
+<item name="loadingTintColor" type="color"><!-- Cor do loading --></item>
+<item name="homeImage" type="drawable"><!-- Imagem de logo que será exibida na ToolBar --></item>
+<item name="brandImage" type="drawable"><!-- Imagem que será exibida na transação --></item>
+<item name="clientName" type="string"><!-- Identificação do cliente que irá ser exibido nas UIs onde necessitar exibir o nome do cliente --></item>
 ````
 
 ## Proguard & R8

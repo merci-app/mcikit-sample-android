@@ -42,5 +42,5 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
-    implementation 'kit.merci:mci-kit:1.2.0'
+    implementation 'kit.merci:mci-kit:1.2.1'
 }
