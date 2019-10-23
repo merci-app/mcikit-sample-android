@@ -1,5 +1,9 @@
 # Release notes
 
+## 1.2.2
+
+BugFix: Fix no ambiente de produção do SDK
+
 ## 1.2.1
 
 Feature: Inclusão de mais campos para customização de cores na UI
