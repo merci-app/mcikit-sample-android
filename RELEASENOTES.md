@@ -6,7 +6,14 @@ BugFix: Fix no ambiente de produção do SDK
 
 ## 1.2.1
 
-Feature: Inclusão de mais campos para customização de cores na UI
+Feature: Melhoria e inclusão de novos campos para customização de cores nas UIs do SDK:
+````xml
+<item name="homeBackgroundColor" type="color"><!-- Cor de fundo da home --></item>
+<item name="homeTitleColor" type="color"><!-- Cor de texto dos botões de categoria da home --></item>
+<item name="actionTintColor" type="color"><!-- Cor dos botões de ação --></item>
+<item name="actionBarTintColor" type="color"><!-- Cor dos botões da ActionBar --></item>
+<item name="loadingTintColor" type="color"><!-- Cor do loading --></item>
+````
 
 ## 1.2.0
 
