@@ -1,5 +1,8 @@
 # Release notes
 
+## 1.2.5
+BugFix: Correção no tint color da image de close da Home
+
 ## 1.2.4
 BugFix: Correção de issue no ambiente de produção
 
