@@ -4,7 +4,7 @@
 BugFix: Correção de issue no ambiente de produção
 
 ## 1.2.3
-BugFix: Correção interna de bugs
+BugFix: Correção de UI nas imagens de merchant
 
 ## 1.2.2
 
