@@ -1,5 +1,11 @@
 # Release notes
 
+## 1.2.4
+BugFix: Correção de issue no ambiente de produção
+
+## 1.2.3
+BugFix: Correção interna de bugs
+
 ## 1.2.2
 
 BugFix: Fix no ambiente de produção do SDK
