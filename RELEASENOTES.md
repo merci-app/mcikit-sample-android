@@ -1,5 +1,12 @@
 # Release notes
 
+## 1.2.6
+Feature: Inclusão de um novo campos para a customização de cor do texto dos botões de ação:
+
+````xml
+<item name="actionTextTintColor" type="color"><!-- Cor do texto dos botões de ação --></item>
+````
+
 ## 1.2.5
 BugFix: Correção no tint color da image de close da Home
 
