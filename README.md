@@ -106,6 +106,7 @@ O mci-kit permite que o cliente altere a identidade visual dos principais pontos
 <item name="homeBackgroundColor" type="color"><!-- Cor de fundo da home --></item>
 <item name="homeTitleColor" type="color"><!-- Cor de texto dos botões de categoria da home --></item>
 <item name="actionTintColor" type="color"><!-- Cor dos botões de ação --></item>
+<item name="actionTextTintColor" type="color"><!-- Cor do texto dos botões de ação --></item>
 <item name="actionBarTintColor" type="color"><!-- Cor dos botões da ActionBar --></item>
 <item name="loadingTintColor" type="color"><!-- Cor do loading --></item>
 <item name="homeImage" type="drawable"><!-- Imagem de logo que será exibida na ToolBar --></item>
