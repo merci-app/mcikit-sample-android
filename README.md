@@ -80,7 +80,7 @@ Para checar se o usuário esta autenticado na nossa plataforma:
 Merci.isAuthenticated()
 ````
 
-IMPORTANTE: Processo de autenticação precosa ser feito apenas uma unica vez. Aconselhamos fzer autenticação no mesmo momento em que o usuário fizer autenticação no seu app e revoke quando o mesmo fizer logout no app. Caso seu app execute um processo de autenticação diferente do padrão, você pode entrar em contato com nosso suporte técnico para auxiliar nesse processo.
+IMPORTANTE: Processo de autenticação precisa ser feito apenas uma unica vez. Aconselhamos fazer a autenticação no mesmo momento em que o usuário fizer autenticação no seu app e revoke quando o mesmo fizer logout no app. Caso seu app execute um processo de autenticação diferente do padrão, você poderá entrar em contato com nosso suporte técnico para auxiliar esse processo.
 
 ## Iniciar Markey Pay
 
