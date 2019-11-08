@@ -80,6 +80,10 @@ Para checar se o usuário esta autenticado na nossa plataforma:
 Merci.isAuthenticated()
 ````
 
+O proceso de autenticação deve ocorrer uma única vez.
+Sugerimos efetuar a autenticação da SDK Merci logo após efetuarem o processo de login do seu aplicativo.
+Sempre que o usuário efetuar logout em seu aplicativo, é obrigatório chamar o método Revoke em nossa SDK.
+
 ## Iniciar Markey Pay
 
 Para iniciar Market Pay é necessário chamar o método de launch da seguinte forma:
