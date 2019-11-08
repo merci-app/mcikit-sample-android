@@ -80,7 +80,9 @@ Para checar se o usuário esta autenticado na nossa plataforma:
 Merci.isAuthenticated()
 ````
 
-IMPORTANTE: Processo de autenticação precisa ser feito apenas uma unica vez. Aconselhamos fazer a autenticação no mesmo momento em que o usuário fizer autenticação no seu app e revoke quando o mesmo fizer logout no app. Caso seu app execute um processo de autenticação diferente do padrão, você poderá entrar em contato com nosso suporte técnico para auxiliar esse processo.
+O proceso de autenticação deve ocorrer uma única vez.
+Sugerimos efetuar a autenticação da SDK Merci logo após efetuarem o processo de login do seu aplicativo.
+Sempre que o usuário efetuar logout em seu aplicativo, é obrigatório chamar o método Revoke em nossa SDK.
 
 ## Iniciar Markey Pay
 
