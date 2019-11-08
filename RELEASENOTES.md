@@ -1,5 +1,8 @@
 # Release notes
 
+## 1.2.7
+Improvements: Otimização nas chamadas dos serviços
+
 ## 1.2.6
 Feature: Inclusão de um novo campos para a customização de cor do texto dos botões de ação:
 
