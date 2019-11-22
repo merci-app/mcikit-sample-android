@@ -56,7 +56,7 @@ sua app seja notificada sempre que o `mci-kit` necessite solicitar algo, por exe
      }
      
      /**
-      Eventos de Analytics trackeados dentro do SDK serão notificaos nessa função de callback
+      Eventos de Analytics trackeados dentro do SDK serão notificados nessa função de callback
      **/
      override fun onEvent(name: String, params: Map<String, Any>) {
      }
@@ -124,7 +124,7 @@ O mci-kit permite que o cliente altere a identidade visual dos principais pontos
 <item name="clientName" type="string"><!-- Identificação do cliente que irá ser exibido nas UIs onde necessitar exibir o nome do cliente --></item>
 ````
 ## Analytics
-Eventos trackeados dentro do SDK que serão notificados na função `onEvent` no `ClientProvider`. Os objetos expostos nas notificações serão todos no padrão JSON, permitindo a fácil leitura por qualquer plataforma, sem a necessidade da SDK externalizar nenhum objeto interno.
+Eventos trackeados dentro do SDK que serão notificados na função `onEvent` no `ClientProvider`. Os objetos expostos nas notificações serão todos no padrão JSON, permitindo a fácil leitura por qualquer plataforma.
 
 ```
 ------------------------------------------------------------------------
