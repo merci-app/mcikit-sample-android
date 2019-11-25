@@ -1,5 +1,52 @@
 # Release notes
 
+## 1.3.0
+Feature: Tageamento de eventos.
+
+Eventos trackeados dentro do SDK que serão notificados na função `onEvent` no `ClientProvider`. Os objetos expostos nas notificações serão todos no padrão JSON, permitindo a fácil leitura por qualquer plataforma.
+
+```
+------------------------------------------------------------------------
+
+MerciSDK_UserAuthenticationNotification:
+{
+    "timestamp": "1573728019",
+    "status": "authenticaded|revoked"
+}
+------------------------------------------------------------------------
+
+MerciSDK_ModulePresentationNotification:
+{
+    "timestamp": "1573728019",
+    "module": "marketplace|payment|wallet",
+    "status": "presented|dismissed"
+}
+------------------------------------------------------------------------
+    
+MerciSDK_MerchantPresentationNotification:
+{
+    "timestamp": "1573728019",
+    "merchant": {
+        "id": "66a42b85-6c02-455b-a3e2-f4ebea478e63",
+        "name": "Uber Pré-Pago"
+    },
+    "status": "presented|dismissed"
+}
+------------------------------------------------------------------------
+
+MerciSDK_TransactionNotification:   
+{
+    "timestamp": "1573728019",
+    "merchant": {
+        "id": "66a42b85-6c02-455b-a3e2-f4ebea478e63",
+        "name": "Uber Pré-Pago"
+    },
+    "amount": 123.45,
+    "status": "started|canceled|failed|completed"
+}   
+------------------------------------------------------------------------
+```
+
 ## 1.2.7
 Improvements: Otimização nas chamadas dos serviços
 
