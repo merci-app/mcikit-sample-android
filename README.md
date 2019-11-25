@@ -54,6 +54,12 @@ sua app seja notificada sempre que o `mci-kit` necessite solicitar algo, por exe
      **/
      override fun supportRequested(context: Context) {
      }
+     
+     /**
+      Eventos de Analytics trackeados dentro do SDK serão notificados nessa função de callback
+     **/
+     override fun onEvent(name: String, params: Map<String, Any>) {
+     }
  } 
 ````
 
@@ -117,6 +123,50 @@ O mci-kit permite que o cliente altere a identidade visual dos principais pontos
 <item name="brandImage" type="drawable"><!-- Imagem que será exibida na transação --></item>
 <item name="clientName" type="string"><!-- Identificação do cliente que irá ser exibido nas UIs onde necessitar exibir o nome do cliente --></item>
 ````
+## Analytics
+Eventos trackeados dentro do SDK que serão notificados na função `onEvent` no `ClientProvider`. Os objetos expostos nas notificações serão todos no padrão JSON, permitindo a fácil leitura por qualquer plataforma.
+
+```
+------------------------------------------------------------------------
+
+MerciSDK_UserAuthenticationNotification:
+{
+    "timestamp": "1573728019",
+    "status": "authenticaded|revoked"
+}
+------------------------------------------------------------------------
+
+MerciSDK_ModulePresentationNotification:
+{
+    "timestamp": "1573728019",
+    "module": "marketplace|payment|wallet",
+    "status": "presented|dismissed"
+}
+------------------------------------------------------------------------
+    
+MerciSDK_MerchantPresentationNotification:
+{
+    "timestamp": "1573728019",
+    "merchant": {
+        "id": "66a42b85-6c02-455b-a3e2-f4ebea478e63",
+        "name": "Uber Pré-Pago"
+    },
+    "status": "presented|dismissed"
+}
+------------------------------------------------------------------------
+
+MerciSDK_TransactionNotification:   
+{
+    "timestamp": "1573728019",
+    "merchant": {
+        "id": "66a42b85-6c02-455b-a3e2-f4ebea478e63",
+        "name": "Uber Pré-Pago"
+    },
+    "amount": 123.45,
+    "status": "started|canceled|failed|completed"
+}   
+------------------------------------------------------------------------
+```
 
 ## Proguard & R8
 Caso seu projeto utilize uma dessas ferramentas de obfuscação será necessário adicionar as seguintes
