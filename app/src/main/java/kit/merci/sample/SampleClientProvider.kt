@@ -27,4 +27,7 @@ class SampleClientProvider(private val context: Context) : ClientProvider() {
         }
     }
 
+    override fun onEvent(name: String, params: Map<String, Any>) {
+    }
+
 }
