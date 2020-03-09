@@ -110,7 +110,7 @@ try {
 
 ## Iniciar Pagar
 
-Para iniciar o módulo de pagar, é necessário chamar o método:
+Para iniciar o módulo de pagar, é necessário chamar o método de launch da seguinte forma:
 ````kotlin
 Merci.launch(this, Payment)
 ````
