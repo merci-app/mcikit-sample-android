@@ -108,6 +108,14 @@ try {
 }
 ````
 
+## Iniciar Pagar
+
+Para iniciar o módulo de pagar, é necessário chamar o método:
+````kotlin
+    Merci.launch(this, Payment)
+````
+
+
 ## Alterar identidade visual default
 
 O mci-kit permite que o cliente altere a identidade visual dos principais pontos do framework. Para fazer isso
