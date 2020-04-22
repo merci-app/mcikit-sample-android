@@ -1,4 +1,6 @@
 # Release notes
+## 1.3.3
+Melhoria na UI de Payment
 
 ## 1.3.2
 Otimização na comunicação entre o SDK e APIs
