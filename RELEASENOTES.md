@@ -1,4 +1,8 @@
 # Release notes
+## 1.3.4
+Atualização de imagem em Pagar
+Correção de bugs
+
 ## 1.3.3
 Melhoria na UI de Payment
 
