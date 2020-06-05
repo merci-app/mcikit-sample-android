@@ -1,4 +1,9 @@
 # Release notes
+## 1.4.0
+SDK Modular
+Módulo de Sacar
+Correção de Erros
+
 ## 1.3.4
 Atualização de imagem em Pagar
 Correção de bugs
