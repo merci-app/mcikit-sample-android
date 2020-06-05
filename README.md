@@ -20,9 +20,26 @@ maven { url '<nossa-url-repo-privada>' }
 Em seguida adicione adicione a dependência mci-kit no gradle do seu aplicativo:
 ```groovy
 dependencies {
-    implementation 'kit.merci:mci-kit:1.3.2'
+    implementation 'kit.merci:mci-kit:1.4.0'
+    implementation 'kit.merci:mci-market-place:1.4.0'
+    implementation 'kit.merci:mci-pay:1.4.0'
+    implementation 'kit.merci:mci-withdraw:1.4.0'
 }
 ```
+
+A partir da versão 1.4.0 foi introduzida a modularização do SDK, por conta disso é possível adicionar
+módulo por necessidade de uso. Por exemplo, caso precise integrar apenas o módulo de Pagar, basta fazer
+o seguinde: 
+
+```groovy
+dependencies {
+    implementation 'kit.merci:mci-kit:1.4.0'
+    implementation 'kit.merci:mci-pay:1.4.0'
+}
+```
+
+Observação: É necessário sempre ter a dependência do mci-kit para que funcione corretamente a base
+do SDK
 
 ## Inicialização
 A framework deverá ser iniciada no método `onCreate` do seu `Application` :
@@ -115,6 +132,21 @@ Para iniciar o módulo de pagar, é necessário chamar o método de launch da se
 Merci.launch(this, Payment)
 ````
 
+## Iniciar Sacar:
+Para iniciar o módulo de Sacar, é necessário chamar o método de launch da seguinte forma:
+
+````kotlin
+Merci.launch(this, Withdraw(enableSupport = 'true OU false'))
+````
+
+Caso enableSupport for true, será exibido um ícone de help (?) e quando o usuário clicar será executado
+o seguinte callback dentro da classe ClientProvider:
+
+````kotlin
+override fun onWithdrawSupportRequested(activity: FragmentActivity) {
+
+}
+````
 
 ## Alterar identidade visual default
 
