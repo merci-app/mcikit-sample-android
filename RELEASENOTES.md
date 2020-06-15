@@ -1,4 +1,7 @@
 # Release notes
+## 1.4.3
+Correção de erros
+
 ## 1.4.2
 Filtro de produtos para Pagar/Sacar
 
