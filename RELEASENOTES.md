@@ -1,4 +1,10 @@
 # Release notes
+## 1.4.2
+Filtro de produtos para Pagar/Sacar
+
+## 1.4.1
+Correção de erros
+
 ## 1.4.0
 SDK Modular
 Módulo de Sacar
