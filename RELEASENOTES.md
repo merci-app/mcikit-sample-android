@@ -1,6 +1,7 @@
 # Release notes
 ## 1.4.7
 Ajustes no Sacar
+
 Correção de erros
 
 ## 1.4.6
