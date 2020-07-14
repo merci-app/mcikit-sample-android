@@ -1,4 +1,17 @@
 # Release notes
+## 1.4.7
+Ajustes no Sacar
+Correção de erros
+
+## 1.4.6
+Correção de erros
+
+## 1.4.5
+Correção de erros
+
+## 1.4.4
+Correção de erros
+
 ## 1.4.3
 Correção de erros
 
