@@ -8,8 +8,8 @@
 ````
 
 ## Whitelist
-Para utilização SDK é necessário o envio de algumas informações do aplicativo cliente para que o 
-mesmo entre na nossa lista de Whitelist. Para isso nos envie as seguintes informações:
+Para a utilização do SDK é necessário o envio de algumas informações do aplicativo cliente para que o 
+mesmo entre na nossa lista de Whitelist. Para isso é necessário enviar as seguintes informações:
 
 - AppId: O mesmo usado para a PlayStore do. Ex.: `com.android.app.cliente`
 - SHA-1 Keystore: Esse hash deve ser extraído do arquivo de certificado que assina o APK de Release:
