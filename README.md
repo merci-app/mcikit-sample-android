@@ -7,6 +7,17 @@
     - Androidx
 ````
 
+## Whitelist
+Para a utilização do SDK é necessário o envio de algumas informações do aplicativo cliente para que o 
+mesmo entre na nossa lista de Whitelist. Para isso é necessário enviar as seguintes informações:
+
+- AppId: O mesmo usado para a PlayStore do. Ex.: `com.android.app.cliente`
+- SHA-1 Keystore: Esse hash deve ser extraído do arquivo de certificado que assina o APK de Release:
+
+````bash
+keytool -list -v -keystore <KEYSTORE_PATH> -alias <KEYSTORE_ALIAS> -storepass <KEYSTORE_PASS> -keypass <KEYSTORE_PASS>
+````
+
 ## Dependências:
 
 Para configurar Merci-Kit em seu projeto primeiro adicione no root do seu `build.gradle` o 
@@ -50,6 +61,7 @@ Merci.instantiate(
                 clientId = "<seu-client-id>",
                 clientSecret = "<seu-client-secret>",
                 environment = Environment.SANDBOX ou Environment.PRODUCTION,
+                clientSecurityProvider = SuaClasseClientSecurityProvider(),
                 clientProvider = SuaClasseClientProvider() 
                 )
 ```
@@ -78,6 +90,21 @@ sua app seja notificada sempre que o `mci-kit` necessite solicitar algo, por exe
      override fun onEvent(name: String, params: Map<String, Any>) {
      }
  } 
+````
+
+O parâmetro clientSecurityProvider pode ser uma classe sua que herda de `ClientSecurityProvider`, 
+utilizada para que o aplicativo cliente envie o Token de Sessão para validações de segurança:
+
+````kotlin
+ class SuaClasseClientProvider : ClientSecurityProvider {
+                             
+     /**
+        Nessa função deverá ser retornado o token de sessão
+     **/     
+     override fun getSessionToken(): String {
+       return "<TOKEN_SESSION>"
+     }
+}
 ````
 
 ## Autenticação
@@ -225,4 +252,4 @@ regras no seu proguard-rules.pro:
 
 ---
 
-[Merci @ 2019](https://merci.com.br)
+[Merci @ 2020](https://merci.com.br)
