@@ -17,7 +17,7 @@ mesmo entre na nossa lista de Whitelist. Para isso é necessário enviar as segu
 ````bash
 keytool -list -v -keystore <KEYSTORE_PATH> -alias <KEYSTORE_ALIAS> -storepass <KEYSTORE_PASS> -keypass <KEYSTORE_PASS>
 ````
-PS.: Enviar o SHA-1 sem os separadores ":" E.: ABCDEFGH4E11A09403BDED58E06B141219B0057E
+PS.: Enviar o SHA-1 sem os separadores ":" Ex.: `ABCDEFGH4E11A09403BDED58E06B141219B0057E`
 
 ## Dependências:
 
