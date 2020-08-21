@@ -1,4 +1,7 @@
 # Release notes
+## 1.5.0
+Implementação de segurança
+
 ## 1.4.7
 Ajustes no Sacar
 
