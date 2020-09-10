@@ -1,4 +1,8 @@
 # Release notes
+## 1.6.0
+Implementação de segurança
+Correção de erros
+
 ## 1.5.0
 Implementação de segurança
 
