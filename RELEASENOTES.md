@@ -1,4 +1,7 @@
 # Release notes
+## 1.7.0
+Correção na exibição do Saldo e Limites
+
 ## 1.6.0
 Implementação de segurança
 Correção de Erros
