@@ -7,18 +7,6 @@
     - Androidx
 ````
 
-## Whitelist
-Para a utilização do SDK é necessário o envio de algumas informações do aplicativo cliente para que o 
-mesmo entre na nossa lista de Whitelist. Para isso é necessário enviar as seguintes informações:
-
-- AppId: O mesmo usado para a PlayStore do. Ex.: `com.android.app.cliente`
-- SHA-1 Keystore: Esse hash deve ser extraído do arquivo de certificado que assina o APK de Release:
-
-````bash
-keytool -list -v -keystore <KEYSTORE_PATH> -alias <KEYSTORE_ALIAS> -storepass <KEYSTORE_PASS> -keypass <KEYSTORE_PASS>
-````
-PS.: Enviar o SHA-1 sem os separadores ":" Ex.: `ABCDEFGH4E11A09403BDED58E06B141219B0057E`
-
 ## Dependências:
 
 Para configurar Merci-Kit em seu projeto primeiro adicione no root do seu `build.gradle` o 
@@ -52,6 +40,35 @@ dependencies {
 
 Observação: É necessário sempre ter a dependência do mci-kit para que funcione corretamente a base
 do SDK
+
+## Whitelist
+Para a utilização do SDK é necessário o envio de algumas informações do aplicativo cliente para que o 
+mesmo entre na nossa lista de Whitelist. Para isso é necessário enviar as seguintes informações:
+
+- AppId: O mesmo usado para a PlayStore do. Ex.: `com.android.app.cliente`
+- SHA-1 Keystore: Esse hash deve ser extraído do arquivo de certificado que assina o APK de Release:
+
+````bash
+keytool -list -v -keystore <KEYSTORE_PATH> -alias <KEYSTORE_ALIAS> -storepass <KEYSTORE_PASS> -keypass <KEYSTORE_PASS>
+````
+PS.: Enviar o SHA-1 sem os separadores ":" Ex.: `ABCDEFGH4E11A09403BDED58E06B141219B0057E`
+
+## API
+Deverá ser fornecido uma API REST que possua uma rota autenticada para que seja possível realizar a validação do _token_ fornecido pelo aplicativo.
+Nessa API iremos enviar o _token_ e o _vat-number_, a API deverá responder com um código de retorno **2XX** quando válido e **4XX** para informações invalidas.
+
+### Exemplo
+
+```
+REST URL: https://BASE_URL/VALIDATION_PATH
+METHODS: [POST|PUT|DELETE]
+REQUEST: {
+    vatNumber: "",
+    token: ""
+}
+RESPONSE:
+RESPONSE CODE: [2XX|4XX]
+```
 
 ## Inicialização
 A framework deverá ser iniciada no método `onCreate` do seu `Application` :
