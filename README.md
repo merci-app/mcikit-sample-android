@@ -114,7 +114,7 @@ O parâmetro clientSecurityProvider pode ser uma classe sua que herda de `Client
 utilizada para que o aplicativo cliente envie o Token de Sessão para validações de segurança:
 
 ````kotlin
- class SuaClasseClientProvider : ClientSecurityProvider {
+ class SuaClasseClientSecurityProvider : ClientSecurityProvider {
                              
      /**
         Nessa função deverá ser retornado o token de sessão
